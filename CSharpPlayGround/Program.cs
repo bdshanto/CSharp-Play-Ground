@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            var stack = new Stack();
+            var stack = new SimpleStack<double>();
             stack.Add(1.1);
             stack.Add(2.2);
             stack.Add(3.8);
@@ -14,7 +14,7 @@
             {
                 double item = stack.Pop();
                 Console.WriteLine($"Item: {item}\n");
-                count += item; 
+                count += item;
             }
             Console.WriteLine($"Sum: {count}");
             Console.ReadLine();

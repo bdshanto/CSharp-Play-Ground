@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32804.467
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpPlayGround", "CSharpPlayGround\CSharpPlayGround.csproj", "{FFD98E38-2835-4F45-A582-F87F012E1D6C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WierdCoffee", "WierdCoffee\WierdCoffee.csproj", "{74C4A9AA-0188-440C-BF56-F1F57A4D7C96}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{FFD98E38-2835-4F45-A582-F87F012E1D6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFD98E38-2835-4F45-A582-F87F012E1D6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFD98E38-2835-4F45-A582-F87F012E1D6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74C4A9AA-0188-440C-BF56-F1F57A4D7C96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74C4A9AA-0188-440C-BF56-F1F57A4D7C96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74C4A9AA-0188-440C-BF56-F1F57A4D7C96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74C4A9AA-0188-440C-BF56-F1F57A4D7C96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
