@@ -7,39 +7,32 @@ class Program
 {
     static void Main(string[] args)
     {
-        var employeeRepository = new GenericRepository<Employee>();
+        var employeeRepository = new GenericRepositoryRemove<Employee>();
         AddEmployee(employeeRepository);
-        RetriveEmployee(employeeRepository);
+        GetEmployeeById(employeeRepository);
+        employeeRepository.Save();
         
-        var orgRepository = new GenericRepository<Organization>();
+        var orgRepository = new GenericRepositoryRemove<Organization>();
         AddOrganizations(orgRepository);
-        RetriveOrganization(orgRepository);
+        GetOrganizationById(orgRepository);
+        orgRepository.Save();
+
+
+        Console.ReadLine();
     }
 
-    private static void RetriveOrganization(GenericRepository<Organization> orgRepository)
+    private static void GetOrganizationById(GenericRepositoryRemove<Organization> orgRepository)
     {
-             
-        int orgCount = 0;
-        foreach (var organization in orgRepository.GetItems())
-        {
-            Console.WriteLine($"Organization: Id: {organization.Id} Name: {organization.Name}");
-            ++orgCount;
-        }
-
-        Console.WriteLine($"Total Organizations: {orgCount}");
-
+        var org = orgRepository.GetById(2);
+        Console.WriteLine($"Get Organization Id: "+org);
     }
 
-    private static void RetriveEmployee(GenericRepository<Employee> employeeRepository)
+    private static void GetEmployeeById(GenericRepositoryRemove<Employee> employee)
     {
-        int employeeCount = 0;
-        foreach (var employee in employeeRepository.GetItems())
-        {
-            Console.WriteLine($"Employee Id: {employee.Id} Name: {employee.FirstName}");
-            ++employeeCount;
-        }
-        Console.WriteLine($"Total Employee: {employeeCount}");
+        var emp = employee.GetById(4);
+        Console.WriteLine($"Get Employee By Id: "+emp);
     }
+
 
     private static void AddEmployee(GenericRepository<Employee> employeeRepository)
     {
